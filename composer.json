@@ -1,15 +1,31 @@
 {
-    "name": "saikurin/fwk-main",
-    "description": "My Framework",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Theo Sikli",
-            "email": "theo@theo-sikli.fr"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {},
-    "version": "1.0.0"
+  "name": "saikurin/fwk-main",
+  "description": "My Framework",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Theo Sikli",
+      "email": "theo@theo-sikli.fr"
+    }
+  ],
+  "minimum-stability": "stable",
+  "version": "1.0.0",
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "mockery/mockery": "^1.4"
+  },
+  "require": {
+    "symfony/http-foundation": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fwk\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fwk\\Tests\\": "tests"
+    }
+  }
 }
