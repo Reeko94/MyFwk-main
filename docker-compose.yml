@@ -1,0 +1,46 @@
+version: '3.6'
+x-cache-from:
+  - &app-cache-from
+    cache_from:
+      - ${NGINX_IMAGE:-iw/nginx}
+      - ${PHP_IMAGE:-iw/php}
+
+services:
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: cluster
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: cluster
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  php:
+    image: ${PHP_IMAGE:-iw/php}
+    build:
+      context: ""
+      target: app_php
+      <<: *app-cache-from
+    volumes:
+      - ./:/srv/app:rw
+      - app-cache:/srv/app/var
+
+  nginx:
+    image: ${NGINX_IMAGE:-iw/nginx}
+    build:
+      context: ""
+      target: app_nginx
+      <<: *app-cache-from
+    depends_on:
+      - php
+    volumes:
+      - ./:/srv/app/public:ro
+    ports:
+      - "8082:80"
+volumes:
+  db-data: { }
+  app-cache: { }
