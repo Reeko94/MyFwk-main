@@ -1,6 +1,6 @@
 <?php
 
-namespace Fwk\Test\Http;
+namespace Fwk\Tests\Http;
 
 use Fwk\Http\Response;
 use PHPUnit\Framework\TestCase;

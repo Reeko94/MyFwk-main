@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Fwk\src\Util;
+namespace Fwk\Tests\Util;
 
 
 use Fwk\Util\Debug;
