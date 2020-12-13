@@ -1,5 +1,7 @@
 .idea
 vendor
 var
+node_modules
 
 .phpunit.result.cache
+.php_cs.cache
