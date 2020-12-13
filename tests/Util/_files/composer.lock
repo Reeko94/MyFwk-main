@@ -1,0 +1,51 @@
+{
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "1c082916b590783c23c11616b9da35f7",
+  "packages": [
+    {
+      "name": "saikurin/fwk-main",
+      "version": "1.0.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Reeko94/MyFwk-main.git",
+        "reference": "ea7ddced7cda17a3bf056d6305278816b0072825"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Reeko94/MyFwk-main/zipball/ea7ddced7cda17a3bf056d6305278816b0072825",
+        "reference": "ea7ddced7cda17a3bf056d6305278816b0072825",
+        "shasum": ""
+      },
+      "type": "library",
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Theo Sikli",
+          "email": "theo@theo-sikli.fr"
+        }
+      ],
+      "description": "My Framework",
+      "support": {
+        "issues": "https://github.com/Reeko94/MyFwk-main/issues",
+        "source": "https://github.com/Reeko94/MyFwk-main/tree/1.0.0"
+      },
+      "time": "2020-12-10T20:00:11+00:00"
+    }
+  ],
+  "packages-dev": [],
+  "aliases": [],
+  "minimum-stability": "dev",
+  "stability-flags": [],
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "platform": [],
+  "platform-dev": [],
+  "plugin-api-version": "2.0.0"
+}
