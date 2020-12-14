@@ -18,7 +18,10 @@
   },
   "require": {
     "symfony/http-foundation": "^5.2",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "doctrine/dbal": "2.12.1",
+    "laminas/laminas-inputfilter": "^2.11"
   },
   "autoload": {
     "psr-4": {
