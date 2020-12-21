@@ -22,7 +22,9 @@
         "ext-pdo": "*",
         "doctrine/dbal": "2.12.1",
         "laminas/laminas-inputfilter": "^2.11",
-        "symfony/cache": "^5.2"
+        "symfony/cache": "^5.2",
+        "laminas/laminas-validator": "^2.13",
+        "laminas/laminas-i18n": "^2.11"
     },
     "autoload": {
         "psr-4": {
